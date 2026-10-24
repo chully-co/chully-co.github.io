@@ -116,8 +116,18 @@
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-  .nav a { color: var(--muted); padding: .5rem 0; border-bottom: 1px solid transparent; }
-  .nav a:hover { color: var(--ink); border-bottom-color: var(--accent); }
+  .nav a {
+    color: var(--muted);
+    padding: .85rem 0;
+    display: inline-block;
+  }
+  .nav a:hover, .nav a:focus-visible {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: .45em;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+  }
   @media (max-width: 620px) {
     .nav { gap: .8rem; font-size: .62rem; letter-spacing: .06em; }
     .monogram { display: none; }
@@ -178,6 +188,7 @@
     border-top: 1px solid var(--rule);
     max-width: var(--measure);
   }
+  .hero-meta a { padding: .45rem 0; }
   .hero-meta a:hover { color: var(--accent); }
 
   /* ---------- sections ---------- */

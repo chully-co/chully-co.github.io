@@ -1,709 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mitchell Johnson — Business Systems Analyst &amp; Developer</title>
-<meta name="description" content="Mitchell Johnson — Business Systems Analyst &amp; Developer at Iridium Communications. SharePoint, ServiceNow, and workflow automation in Phoenix, Arizona.">
-<meta name="author" content="Mitchell Johnson">
-<link rel="canonical" href="https://chully-co.github.io/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mitchell Johnson | Business Systems Analyst &amp; Developer</title>
+  <meta name="description" content="Mitchell Johnson builds connected enterprise systems across SharePoint, ServiceNow, Power Platform, and AI-assisted automation. Explore selected work and experience.">
+  <meta name="author" content="Mitchell Johnson">
+  <link rel="canonical" href="https://chully-co.github.io/">
 
-<meta property="og:type" content="profile">
-<meta property="og:title" content="Mitchell Johnson — Business Systems Analyst &amp; Developer">
-<meta property="og:description" content="SharePoint, ServiceNow, and workflow automation. Phoenix, Arizona.">
-<meta property="og:url" content="https://chully-co.github.io/">
-<meta name="twitter:card" content="summary">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Mitchell Johnson — Enterprise systems, made useful.">
+  <meta property="og:description" content="Business systems, workflow automation, and platform leadership across SharePoint, ServiceNow, Power Platform, and AI tooling.">
+  <meta property="og:url" content="https://chully-co.github.io/">
+  <meta property="og:image" content="https://chully-co.github.io/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mitchell Johnson — Business Systems Analyst and Developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f5f2eb" id="theme-color">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2316130f'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' fill='%23f7f5f1' text-anchor='middle'%3EMJ%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('mj-theme');
+        var preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : preferred;
+      } catch (error) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 
-<style>
-  :root {
-    --paper: #f7f5f1;
-    --ink: #16130f;
-    --muted: #6b635a;
-    --faint: #8d8478;
-    --rule: #ded8ce;
-    --accent: #a8432a;
-    --measure: 68ch;
-    --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --serif: "Newsreader", Georgia, "Times New Roman", serif;
-    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mitchell Johnson",
+    "url": "https://chully-co.github.io/",
+    "jobTitle": "Business Systems Analyst & Developer",
+    "email": "mailto:mlj539@gmail.com",
+    "worksFor": { "@type": "Organization", "name": "Iridium Communications" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Arizona State University" },
+    "address": { "@type": "PostalAddress", "addressRegion": "AZ", "addressLocality": "Phoenix" },
+    "sameAs": [
+      "https://www.linkedin.com/in/mjohnson98",
+      "https://github.com/chully-co"
+    ],
+    "knowsAbout": ["SharePoint", "ServiceNow", "Power Automate", "Power BI", "Workflow automation"]
   }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --paper: #12100d;
-      --ink: #f2ede5;
-      --muted: #a2988a;
-      --faint: #857c70;
-      --rule: #2e2823;
-      --accent: #e0805f;
-    }
-  }
-
-  *, *::before, *::after { box-sizing: border-box; }
-
-  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    * { animation: none !important; transition: none !important; }
-  }
-
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 1rem;
-    line-height: 1.6;
-    font-feature-settings: "kern" 1;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  .wrap {
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 0 clamp(1.25rem, 5vw, 3.5rem);
-  }
-
-  a { color: inherit; text-decoration: none; }
-  a:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
-    border-radius: 2px;
-  }
-
-  /* ---------- masthead ---------- */
-
-  .masthead {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: color-mix(in srgb, var(--paper) 92%, transparent);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid transparent;
-    transition: border-color .2s ease;
-  }
-  .masthead.is-stuck { border-bottom-color: var(--rule); }
-
-  .masthead .wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    min-height: 62px;
-  }
-
-  .monogram {
-    font-family: var(--mono);
-    font-size: .75rem;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-  .monogram b { color: var(--ink); font-weight: 500; }
-
-  .nav {
-    display: flex;
-    gap: clamp(.9rem, 2.5vw, 1.9rem);
-    font-family: var(--mono);
-    font-size: .7rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  .nav a {
-    color: var(--muted);
-    padding: .85rem 0;
-    display: inline-block;
-  }
-  .nav a:hover, .nav a:focus-visible {
-    color: var(--ink);
-    text-decoration: underline;
-    text-underline-offset: .45em;
-    text-decoration-color: var(--accent);
-    text-decoration-thickness: 1px;
-  }
-  @media (max-width: 620px) {
-    .nav { gap: .8rem; font-size: .62rem; letter-spacing: .06em; }
-    .monogram { display: none; }
-  }
-
-  /* ---------- hero ---------- */
-
-  .hero { padding: clamp(3.5rem, 11vh, 7.5rem) 0 clamp(2.5rem, 6vh, 4rem); }
-
-  .eyebrow {
-    font-family: var(--mono);
-    font-size: .72rem;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 1.6rem;
-    display: flex;
-    align-items: center;
-    gap: .75rem;
-  }
-  .eyebrow::after {
-    content: "";
-    height: 1px;
-    flex: 0 0 clamp(1.5rem, 8vw, 5rem);
-    background: var(--rule);
-  }
-
-  h1 {
-    font-family: var(--serif);
-    font-weight: 500;
-    font-size: clamp(2.9rem, 9.5vw, 5.6rem);
-    line-height: .96;
-    letter-spacing: -.025em;
-    margin: 0 0 1.1rem;
-    text-wrap: balance;
-  }
-
-  .standfirst {
-    font-family: var(--serif);
-    font-size: clamp(1.2rem, 2.6vw, 1.65rem);
-    line-height: 1.42;
-    font-weight: 400;
-    max-width: 34ch;
-    margin: 0 0 2.4rem;
-    color: var(--ink);
-  }
-  .standfirst em { font-style: italic; color: var(--accent); }
-
-  .hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .55rem 1.4rem;
-    font-family: var(--mono);
-    font-size: .76rem;
-    letter-spacing: .04em;
-    color: var(--muted);
-    padding-top: 1.4rem;
-    border-top: 1px solid var(--rule);
-    max-width: var(--measure);
-  }
-  .hero-meta a { padding: .45rem 0; }
-  .hero-meta a:hover { color: var(--accent); }
-
-  /* ---------- sections ---------- */
-
-  section { padding: clamp(3rem, 7vh, 5.5rem) 0; }
-
-  .section-head {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    margin-bottom: clamp(2rem, 5vh, 3.2rem);
-  }
-  .section-head h2 {
-    font-family: var(--mono);
-    font-size: .74rem;
-    font-weight: 500;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0;
-    white-space: nowrap;
-  }
-  .section-head .num { color: var(--accent); }
-  .section-head .fill {
-    flex: 1;
-    height: 1px;
-    background: var(--rule);
-    transform: translateY(-.18em);
-  }
-
-  .lede {
-    font-family: var(--serif);
-    font-size: clamp(1.25rem, 2.4vw, 1.55rem);
-    line-height: 1.5;
-    max-width: 46ch;
-    margin: 0 0 clamp(2.5rem, 6vh, 3.5rem);
-    text-wrap: pretty;
-  }
-
-  /* ---------- experience ---------- */
-
-  .job {
-    display: grid;
-    grid-template-columns: 11rem 1fr;
-    gap: clamp(1rem, 4vw, 3rem);
-    padding: clamp(1.6rem, 3.5vh, 2.4rem) 0;
-    border-top: 1px solid var(--rule);
-  }
-  .job:last-child { border-bottom: 1px solid var(--rule); }
-  @media (max-width: 760px) {
-    .job { grid-template-columns: 1fr; gap: .7rem; }
-  }
-
-  .job-side {
-    font-family: var(--mono);
-    font-size: .72rem;
-    letter-spacing: .05em;
-    color: var(--muted);
-    line-height: 1.7;
-    padding-top: .35rem;
-  }
-  .job-side .dates { display: block; color: var(--ink); }
-  .job-side .place { display: block; color: var(--faint); }
-
-  .job-body h3 {
-    font-family: var(--serif);
-    font-size: clamp(1.25rem, 2.3vw, 1.5rem);
-    font-weight: 500;
-    line-height: 1.25;
-    margin: 0 0 .15rem;
-    letter-spacing: -.01em;
-  }
-  .job-body .org {
-    font-size: .82rem;
-    font-weight: 500;
-    color: var(--accent);
-    letter-spacing: .01em;
-    margin: 0 0 1rem;
-  }
-  .job-body ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    max-width: var(--measure);
-  }
-  .job-body li {
-    position: relative;
-    padding-left: 1.35rem;
-    margin-bottom: .55rem;
-    font-size: .935rem;
-    line-height: 1.62;
-    color: var(--muted);
-  }
-  .job-body li:last-child { margin-bottom: 0; }
-  .job-body li::before {
-    content: "—";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    opacity: .75;
-  }
-  .job-body li strong { color: var(--ink); font-weight: 500; }
-
-  /* ---------- selected work ---------- */
-
-  .work { display: grid; gap: 0; }
-
-  .piece {
-    display: grid;
-    grid-template-columns: 2.5rem 1fr;
-    gap: clamp(1rem, 3vw, 2rem);
-    padding: clamp(1.5rem, 3.5vh, 2.2rem) 0;
-    border-top: 1px solid var(--rule);
-  }
-  .piece:last-child { border-bottom: 1px solid var(--rule); }
-
-  .piece-idx {
-    font-family: var(--mono);
-    font-size: .72rem;
-    color: var(--accent);
-    padding-top: .3rem;
-  }
-  .piece h3 {
-    font-family: var(--serif);
-    font-size: clamp(1.15rem, 2.1vw, 1.35rem);
-    font-weight: 500;
-    margin: 0 0 .5rem;
-    letter-spacing: -.01em;
-  }
-  .piece p {
-    margin: 0 0 .85rem;
-    color: var(--muted);
-    font-size: .935rem;
-    line-height: 1.62;
-    max-width: var(--measure);
-  }
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .4rem;
-    font-family: var(--mono);
-    font-size: .68rem;
-    letter-spacing: .05em;
-    color: var(--faint);
-  }
-  .tags span {
-    border: 1px solid var(--rule);
-    border-radius: 2px;
-    padding: .16rem .5rem;
-  }
-
-  /* ---------- skills ---------- */
-
-  .skill-row {
-    display: grid;
-    grid-template-columns: 11rem 1fr;
-    gap: clamp(1rem, 4vw, 3rem);
-    padding: .95rem 0;
-    border-bottom: 1px solid var(--rule);
-    align-items: baseline;
-  }
-  .skill-row:first-of-type { border-top: 1px solid var(--rule); }
-  @media (max-width: 760px) {
-    .skill-row { grid-template-columns: 1fr; gap: .25rem; padding: 1.1rem 0; }
-    .skill-row dt { padding-top: 0 !important; }
-  }
-  .skill-row dt {
-    font-family: var(--mono);
-    font-size: .7rem;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    padding-top: .18rem;
-  }
-  .skill-row dd {
-    margin: 0;
-    font-size: .935rem;
-    line-height: 1.7;
-    color: var(--ink);
-  }
-
-  /* ---------- background ---------- */
-
-  .bg-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: clamp(1.5rem, 4vw, 3rem);
-  }
-  .bg-item .k {
-    font-family: var(--mono);
-    font-size: .68rem;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 .5rem;
-  }
-  .bg-item .v {
-    font-family: var(--serif);
-    font-size: 1.1rem;
-    margin: 0 0 .2rem;
-    line-height: 1.35;
-  }
-  .bg-item .s {
-    font-size: .85rem;
-    color: var(--muted);
-    margin: 0;
-  }
-
-  /* ---------- contact ---------- */
-
-  .contact {
-    border-top: 1px solid var(--rule);
-    padding: clamp(3rem, 8vh, 5rem) 0 clamp(2rem, 5vh, 3rem);
-  }
-  .contact h2 {
-    font-family: var(--serif);
-    font-size: clamp(1.9rem, 4.5vw, 2.9rem);
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -.02em;
-    margin: 0 0 1rem;
-    max-width: 20ch;
-  }
-  .contact .sub { color: var(--muted); margin: 0 0 2.2rem; max-width: 44ch; font-size: .95rem; }
-
-  .contact-links { display: flex; flex-wrap: wrap; gap: .6rem 2rem; }
-  .contact-links a {
-    font-family: var(--mono);
-    font-size: .8rem;
-    letter-spacing: .03em;
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: .25rem;
-    transition: border-color .15s ease, color .15s ease;
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-  }
-  .contact-links a:hover { border-bottom-color: var(--accent); color: var(--accent); }
-
-  footer {
-    border-top: 1px solid var(--rule);
-    padding: 1.6rem 0 2.6rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem 1.5rem;
-    justify-content: space-between;
-    font-family: var(--mono);
-    font-size: .66rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--faint);
-  }
-
-  /* ---------- print ---------- */
-
-  @media print {
-    :root { --paper: #fff; --ink: #000; --muted: #333; --faint: #555; --rule: #ccc; --accent: #000; }
-    .masthead, .contact-links, footer .built { display: none; }
-    body { font-size: 10.5pt; line-height: 1.4; }
-    .hero { padding: 0 0 1rem; }
-    h1 { font-size: 26pt; }
-    .standfirst { font-size: 12pt; max-width: none; }
-    section { padding: .8rem 0; break-inside: avoid; }
-    .job, .piece { break-inside: avoid; padding: .6rem 0; }
-    .job-body li, .piece p, .skill-row dd { font-size: 10pt; color: #222; }
-    .section-head { margin-bottom: .8rem; }
-    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555; }
-  }
-</style>
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="masthead" id="top">
-  <div class="wrap">
-    <div class="monogram"><b>Mitchell Johnson</b> &nbsp;·&nbsp; Phoenix, AZ</div>
-    <nav class="nav" aria-label="Sections">
-      <a href="#work">Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#background">Background</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Mitchell Johnson, back to top">
+        <span class="brand-mark" aria-hidden="true">MJ</span>
+        <span class="brand-copy"><strong>Mitchell Johnson</strong><small>Systems &amp; automation</small></span>
+      </a>
 
-<main>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-  <div class="wrap">
-    <section class="hero" aria-labelledby="name">
-      <p class="eyebrow">Business Systems Analyst &amp; Developer</p>
-      <h1 id="name">Mitchell<br>Johnson</h1>
-      <p class="standfirst">I build the quiet infrastructure — SharePoint, ServiceNow, and automation — that lets people <em>stop doing the same task twice.</em></p>
-      <p class="hero-meta">
-        <span>Iridium Communications</span>
-        <span>Phoenix, Arizona</span>
-        <a href="https://www.linkedin.com/in/mjohnson98">LinkedIn</a>
-        <a href="https://github.com/chully-co">GitHub</a>
-        <a href="mailto:mlj539@gmail.com">mlj539@gmail.com</a>
-      </p>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Change color theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.5"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="hero-kicker">Mitchell Johnson <span>Phoenix, Arizona</span></p>
+        <h1 id="hero-title"><span>Enterprise systems,</span> <em>made useful.</em></h1>
+        <p class="hero-intro">I’m a Business Systems Analyst &amp; Developer who connects people, platforms, and process—across SharePoint, ServiceNow, Power Platform, and AI-assisted automation.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+          <button class="button button-secondary" type="button" data-print>Print / save résumé</button>
+        </div>
+        <ul class="hero-credentials">
+          <li><span>Now</span>Iridium Communications</li>
+          <li><span>Certified</span>ServiceNow CSA</li>
+          <li><span>Degree</span>B.S. Computer Information Systems</li>
+        </ul>
+      </div>
+
+      <figure class="hero-stage reveal" id="systems-stage" aria-labelledby="systems-caption">
+        <div class="stage-top" aria-hidden="true"><span>A connected practice</span><span>05 platforms / 01 focus</span></div>
+        <div class="network" id="systems-network" aria-hidden="true">
+          <svg class="network-lines" viewBox="0 0 100 100" preserveAspectRatio="none" focusable="false">
+            <path class="link-base" data-target="node-sharepoint" d="M50 48 Q33 30 17 23"></path>
+            <path class="link-flow" data-target="node-sharepoint" d="M50 48 Q33 30 17 23"></path>
+            <path class="link-base" data-target="node-servicenow" d="M50 48 Q67 30 80 21"></path>
+            <path class="link-flow" data-target="node-servicenow" d="M50 48 Q67 30 80 21"></path>
+            <path class="link-base" data-target="node-power" d="M50 48 Q72 57 84 70"></path>
+            <path class="link-flow" data-target="node-power" d="M50 48 Q72 57 84 70"></path>
+            <path class="link-base" data-target="node-ai" d="M50 48 Q29 61 18 77"></path>
+            <path class="link-flow" data-target="node-ai" d="M50 48 Q29 61 18 77"></path>
+            <path class="link-base" data-target="node-bi" d="M50 48 Q56 69 54 88"></path>
+            <path class="link-flow" data-target="node-bi" d="M50 48 Q56 69 54 88"></path>
+          </svg>
+
+          <div class="map-node" id="node-sharepoint" data-x="17" data-y="23" data-depth="19" data-phase="0.2">
+            <span class="node-number">01</span><strong>SharePoint</strong><small>Content &amp; collaboration</small>
+          </div>
+          <div class="map-node" id="node-servicenow" data-x="80" data-y="21" data-depth="13" data-phase="1.7">
+            <span class="node-number">02</span><strong>ServiceNow</strong><small>Service delivery</small>
+          </div>
+          <div class="map-node" id="node-power" data-x="84" data-y="70" data-depth="22" data-phase="3.1">
+            <span class="node-number">03</span><strong>Power Platform</strong><small>Process automation</small>
+          </div>
+          <div class="map-node" id="node-ai" data-x="18" data-y="77" data-depth="15" data-phase="4.4">
+            <span class="node-number">04</span><strong>AI Tooling</strong><small>Admin acceleration</small>
+          </div>
+          <div class="map-node" id="node-bi" data-x="54" data-y="88" data-depth="10" data-phase="5.8">
+            <span class="node-number">05</span><strong>Power BI</strong><small>Reporting &amp; insight</small>
+          </div>
+          <div class="map-hub" id="node-hub" data-x="50" data-y="48" data-depth="6" data-phase="2.2">
+            <strong>MJ</strong><span>People · process<br>platforms</span>
+          </div>
+        </div>
+        <figcaption class="stage-bottom" id="systems-caption">
+          <span class="pointer-hint">Move your pointer to explore the connections.</span>
+          <span class="touch-hint">A connected view of the platforms I work across.</span>
+          <span class="live-label"><i aria-hidden="true"></i>Interactive</span>
+        </figcaption>
+      </figure>
     </section>
-  </div>
 
-  <div class="wrap">
-    <section id="work" aria-labelledby="work-h">
-      <div class="section-head">
-        <h2 id="work-h"><span class="num">01</span> — Experience</h2>
-        <span class="fill"></span>
+    <section class="impact wrap reveal">
+      <div class="impact-item"><strong>2 TB</strong><span>of content migrated<br>to SharePoint</span></div>
+      <div class="impact-item"><strong>12</strong><span>stakeholder groups<br>coordinated</span></div>
+      <div class="impact-item"><strong>10+</strong><span>ServiceNow catalog<br>items built</span></div>
+      <div class="impact-item"><strong>4</strong><span>team members onboarded<br>through role transition</span></div>
+    </section>
+
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <p class="section-index">01 / Selected work</p>
+        <h2 id="work-title">Outcomes, not just administration.</h2>
+        <p>Selected examples of platform migration, process automation, AI-assisted operations, and ServiceNow delivery.</p>
       </div>
 
-      <p class="lede">Four years at a satellite communications company, moving from project reporting systems to platform administration to building the automation layer on top of both.</p>
-
-      <article class="job">
-        <div class="job-side">
-          <span class="dates">Jan 2026 — Present</span>
-          <span class="place">Chandler, AZ</span>
+      <article class="case-study reveal" id="project-migration">
+        <div class="case-copy">
+          <p class="case-index">01 — SharePoint migration</p>
+          <h3>A controlled path off DocuShare.</h3>
+          <p class="case-lede">I led a nine-month migration of 2TB of collaboration data into SharePoint, including CUI-classified content, while coordinating across 12 stakeholder groups.</p>
+          <dl class="case-facts">
+            <div><dt>Role</dt><dd>Migration lead</dd></div>
+            <div><dt>Scale</dt><dd>2TB · 12 stakeholder groups</dd></div>
+            <div><dt>Result</dt><dd>Minimal downtime</dd></div>
+          </dl>
+          <div class="tags"><span>SharePoint</span><span>ShareGate</span><span>CUI</span><span>Change management</span></div>
+          <!-- Optional public project links can be added here. See README.md. -->
         </div>
-        <div class="job-body">
-          <h3>Business Systems Analyst &amp; Developer</h3>
-          <p class="org">Iridium Communications</p>
-          <ul>
-            <li>Built an AI toolkit on Claude Code that automates administrative work — reporting, user offboarding, one-off scripting — across SharePoint, Teams, ServiceNow, Jira, Confluence, and GitLab.</li>
-            <li>Built 10+ ServiceNow Service Catalog items with automated flows behind each one.</li>
-            <li>Leading requirements scoping for a ServiceNow employee lifecycle overhaul covering onboarding and offboarding, coordinating the development team delivering it.</li>
-            <li>Onboarded 4 team members onto SharePoint and Teams administration through the role transition.</li>
-            <li>Continue to own SharePoint and M365 governance across commercial and government programs.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="job">
-        <div class="job-side">
-          <span class="dates">Jan 2023 — Jan 2026</span>
-          <span class="place">Tempe, AZ</span>
-        </div>
-        <div class="job-body">
-          <h3>SharePoint &amp; Teams Administrator</h3>
-          <p class="org">Iridium Communications</p>
-          <ul>
-            <li>Led a <strong>9-month migration of 2TB</strong> of data — including CUI-classified content — from DocuShare to SharePoint, coordinating 12 stakeholder groups with minimal downtime.</li>
-            <li>Designed and led the training program for a new SharePoint Online company intranet, migrating content off WordPress, ADP, and local file shares.</li>
-            <li>Built a Power Automate document management system still in daily company-wide use, with minimal bug fixes since launch.</li>
-            <li>Gathered requirements, implemented site architecture, and supported change management inside an Agile environment.</li>
-          </ul>
+        <div class="case-visual migration-visual" aria-hidden="true">
+          <div class="visual-chrome"><span>Migration map</span><span>9 months</span></div>
+          <div class="migration-flow">
+            <div class="visual-system"><small>From</small><strong>DocuShare</strong><span>Legacy repository</span></div>
+            <div class="migration-channel"><span class="channel-line"><i></i></span><strong>2 TB</strong><small>12 groups</small></div>
+            <div class="visual-system visual-system-accent"><small>To</small><strong>SharePoint</strong><span>Modern collaboration</span></div>
+          </div>
+          <div class="visual-status"><span>CUI-classified content</span><span><i></i>Minimal downtime</span></div>
         </div>
       </article>
 
-      <article class="job">
-        <div class="job-side">
-          <span class="dates">Jan 2022 — Feb 2023</span>
-          <span class="place">Tempe, AZ</span>
+      <article class="case-study case-study-reverse reveal" id="project-automation">
+        <div class="case-copy">
+          <p class="case-index">02 — Process automation</p>
+          <h3>Document management that stays out of the way.</h3>
+          <p class="case-lede">I built a Power Automate document management system that remains in active daily use company-wide, with minimal bug fixes needed since launch.</p>
+          <dl class="case-facts">
+            <div><dt>Role</dt><dd>Builder &amp; process designer</dd></div>
+            <div><dt>Reach</dt><dd>Company-wide</dd></div>
+            <div><dt>Result</dt><dd>Dependable daily operation</dd></div>
+          </dl>
+          <div class="tags"><span>Power Automate</span><span>SharePoint</span><span>Process design</span></div>
+          <!-- Optional public project links can be added here. See README.md. -->
         </div>
-        <div class="job-body">
-          <h3>Project Management Systems Administrator</h3>
-          <p class="org">Iridium Communications</p>
-          <ul>
-            <li>Managed roughly 12 Power BI dashboards for project reporting; partnered with outside consultants to consolidate about 8 of them into a single executive dashboard.</li>
-            <li>Administered Microsoft Project Web App, using SQL, DAX, and VBA macros to keep reporting accurate.</li>
-          </ul>
+        <div class="case-visual automation-visual" aria-hidden="true">
+          <div class="visual-chrome"><span>Automated document flow</span><span>Active daily</span></div>
+          <div class="automation-flow">
+            <div class="automation-endpoint"><small>Input</small><strong>Documents</strong></div>
+            <div class="automation-beam"><span></span><span></span><span></span></div>
+            <div class="automation-core"><span class="core-ring"></span><strong>Power<br>Automate</strong><small>Workflow layer</small></div>
+            <div class="automation-beam"><span></span><span></span><span></span></div>
+            <div class="automation-endpoint"><small>Outcome</small><strong>Daily<br>operations</strong></div>
+          </div>
+          <div class="visual-status"><span>Company-wide use</span><span><i></i>Minimal fixes since launch</span></div>
         </div>
       </article>
 
-      <article class="job">
-        <div class="job-side">
-          <span class="dates">May 2021 — Jan 2022</span>
-          <span class="place">Remote</span>
+      <article class="case-study reveal" id="project-ai">
+        <div class="case-copy">
+          <p class="case-index">03 — AI-assisted operations</p>
+          <h3>A practical toolkit for the long tail of admin work.</h3>
+          <p class="case-lede">Using Claude Code, I built an AI toolkit for reporting, user offboarding, and one-off scripting across the enterprise platforms my team uses every day.</p>
+          <dl class="case-facts">
+            <div><dt>Focus</dt><dd>Reporting · offboarding · scripting</dd></div>
+            <div><dt>Reach</dt><dd>Six connected platforms</dd></div>
+            <div><dt>Approach</dt><dd>Reusable, AI-assisted workflows</dd></div>
+          </dl>
+          <div class="tags"><span>Claude Code</span><span>AI tooling</span><span>PowerShell</span><span>Automation</span></div>
+          <!-- Optional public project links can be added here. See README.md. -->
         </div>
-        <div class="job-body">
-          <h3>IT Infrastructure Intern</h3>
-          <p class="org">DHL Global Forwarding</p>
+        <div class="case-visual ai-visual" aria-hidden="true">
+          <div class="visual-chrome"><span>AI admin toolkit</span><span>06 platforms</span></div>
+          <div class="toolkit-map">
+            <div class="toolkit-tasks"><small>Tasks</small><span>Reporting</span><span>Offboarding</span><span>One-off scripting</span></div>
+            <div class="toolkit-core"><small>Built with</small><strong>Claude<br>Code</strong><span class="toolkit-pulse"></span></div>
+            <div class="toolkit-platforms"><small>Connected platforms</small><div><span>SharePoint</span><span>Teams</span><span>ServiceNow</span><span>Jira</span><span>Confluence</span><span>GitLab</span></div></div>
+          </div>
+          <div class="visual-status"><span>Reusable workflows</span><span><i></i>Built for real admin work</span></div>
+        </div>
+      </article>
+
+      <article class="case-study case-study-reverse reveal" id="project-servicenow">
+        <div class="case-copy">
+          <p class="case-index">04 — ServiceNow delivery</p>
+          <h3>From service catalog to employee lifecycle.</h3>
+          <p class="case-lede">I built more than ten Service Catalog items with corresponding automated flows. I’m now leading requirements scoping for an onboarding and offboarding overhaul while coordinating the development team.</p>
+          <dl class="case-facts">
+            <div><dt>Delivered</dt><dd>10+ catalog items &amp; flows</dd></div>
+            <div><dt>Current</dt><dd>Employee lifecycle overhaul</dd></div>
+            <div><dt>Leadership</dt><dd>Requirements &amp; team coordination</dd></div>
+          </dl>
+          <div class="tags"><span>ServiceNow</span><span>Service Catalog</span><span>Flow Designer</span><span>Requirements</span></div>
+          <!-- Optional public project links can be added here. See README.md. -->
+        </div>
+        <div class="case-visual catalog-visual" aria-hidden="true">
+          <div class="visual-chrome"><span>Service delivery</span><span>Build → lead</span></div>
+          <div class="catalog-scene">
+            <div class="catalog-stack"><span class="stack-sheet sheet-one"></span><span class="stack-sheet sheet-two"></span><div class="catalog-card"><small>Service Catalog</small><strong>10+</strong><span>Items with<br>automated flows</span></div></div>
+            <div class="lifecycle-path"><div><span>01</span><strong>Catalog item</strong></div><i></i><div><span>02</span><strong>Automated flow</strong></div><i></i><div><span>03</span><strong>Employee lifecycle</strong></div></div>
+          </div>
+          <div class="visual-status"><span>Requirements scoping</span><span><i></i>Development coordination</span></div>
         </div>
       </article>
     </section>
-  </div>
 
-  <div class="wrap">
-    <section id="projects" aria-labelledby="proj-h">
-      <div class="section-head">
-        <h2 id="proj-h"><span class="num">02</span> — Selected Work</h2>
-        <span class="fill"></span>
-      </div>
+    <section class="experience-band" id="experience" aria-labelledby="experience-title">
+      <div class="wrap section">
+        <div class="section-heading reveal">
+          <p class="section-index">02 / Experience</p>
+          <h2 id="experience-title">A career built across the stack.</h2>
+          <p>From project reporting and platform administration to business analysis, development, and technical leadership.</p>
+        </div>
 
-      <div class="work">
-        <article class="piece">
-          <div class="piece-idx">i</div>
-          <div>
-            <h3>The DocuShare exit</h3>
-            <p>Two terabytes of collaboration data — a chunk of it export-controlled — lived in a system the company was leaving behind. I scoped the migration, sequenced it around twelve stakeholder groups, and moved the content into SharePoint over nine months without a business-stopping outage.</p>
-            <div class="tags"><span>SharePoint</span><span>ShareGate</span><span>Change Management</span><span>CUI</span></div>
-          </div>
-        </article>
+        <div class="timeline">
+          <article class="job reveal">
+            <div class="job-meta"><time>Jan 2026 — Present</time><span>Chandler, AZ</span></div>
+            <div class="job-content">
+              <h3>Business Systems Analyst &amp; Developer</h3>
+              <p class="employer">Iridium Communications</p>
+              <ul>
+                <li>Built an AI toolkit using Claude Code to automate reporting, user offboarding, and one-off scripting across SharePoint, Teams, ServiceNow, Jira, Confluence, and GitLab.</li>
+                <li>Built 10+ ServiceNow Service Catalog items with corresponding automated flows.</li>
+                <li>Leading requirements scoping for a ServiceNow-based employee lifecycle overhaul, coordinating a development team.</li>
+                <li>Onboarded four team members on SharePoint and Teams administration as part of the role transition.</li>
+                <li>Continue overseeing SharePoint and Microsoft 365 governance across commercial and government programs.</li>
+              </ul>
+            </div>
+          </article>
 
-        <article class="piece">
-          <div class="piece-idx">ii</div>
-          <div>
-            <h3>A document system that runs itself</h3>
-            <p>Built in Power Automate to handle document lifecycle across the organization. It has been in daily company-wide use since launch with minimal bug fixes — the kind of tool that succeeds by never being noticed.</p>
-            <div class="tags"><span>Power Automate</span><span>SharePoint</span><span>Process Design</span></div>
-          </div>
-        </article>
+          <article class="job reveal">
+            <div class="job-meta"><time>Jan 2023 — Jan 2026</time><span>Tempe, AZ</span></div>
+            <div class="job-content">
+              <h3>SharePoint &amp; Teams Administrator</h3>
+              <p class="employer">Iridium Communications</p>
+              <ul>
+                <li>Led a nine-month migration of 2TB of data, including CUI-classified content, from DocuShare to SharePoint, coordinating across 12 stakeholder groups with minimal downtime.</li>
+                <li>Designed and led training for a new SharePoint Online company intranet, migrating content from WordPress, ADP, and local file shares.</li>
+                <li>Built a Power Automate document management system still in active daily use company-wide with minimal bug fixes since launch.</li>
+                <li>Engaged stakeholders to gather requirements, implement site architecture, and support change management in an Agile environment.</li>
+              </ul>
+            </div>
+          </article>
 
-        <article class="piece">
-          <div class="piece-idx">iii</div>
-          <div>
-            <h3>AI admin toolkit</h3>
-            <p>Administrative work at an enterprise has a long tail: reports nobody built a button for, offboardings, scripts written once and reused never. I built a Claude Code toolkit with connectors into SharePoint, Teams, ServiceNow, Jira, Confluence, and GitLab so those tasks get executed rather than queued.</p>
-            <div class="tags"><span>Claude Code</span><span>ServiceNow</span><span>Graph</span><span>GitLab</span></div>
-          </div>
-        </article>
+          <article class="job reveal">
+            <div class="job-meta"><time>Jan 2022 — Feb 2023</time><span>Tempe, AZ</span></div>
+            <div class="job-content">
+              <h3>Project Management Systems Administrator</h3>
+              <p class="employer">Iridium Communications</p>
+              <ul>
+                <li>Managed approximately 12 Power BI dashboards for project reporting; partnered with outside consultants to consolidate roughly eight into a single executive dashboard.</li>
+                <li>Administered Microsoft Project Web App; used SQL, DAX, and VBA macros to maintain reporting accuracy.</li>
+              </ul>
+            </div>
+          </article>
 
-        <article class="piece">
-          <div class="piece-idx">iv</div>
-          <div>
-            <h3>Homelab, off the clock</h3>
-            <p>The house runs on a Proxmox hypervisor: a container stack for media and photos, a NAS holding the backups, and Home Assistant driving the automation. It is where I test the things I later argue for at work — and occasionally break at 11pm.</p>
-            <div class="tags"><span>Proxmox</span><span>Docker</span><span>Home Assistant</span><span>Networking</span></div>
-          </div>
-        </article>
+          <article class="job reveal">
+            <div class="job-meta"><time>May 2021 — Jan 2022</time><span>Remote</span></div>
+            <div class="job-content">
+              <h3>IT Infrastructure Intern</h3>
+              <p class="employer">DHL Global Forwarding</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
-  </div>
 
-  <div class="wrap">
-    <section id="skills" aria-labelledby="skills-h">
-      <div class="section-head">
-        <h2 id="skills-h"><span class="num">03</span> — Capabilities</h2>
-        <span class="fill"></span>
+    <section class="section wrap capabilities-layout" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="capabilities-intro reveal">
+        <p class="section-index">03 / Capabilities</p>
+        <h2 id="capabilities-title">Technical range.<br>Practical delivery.</h2>
+        <p>I work across the full path from stakeholder need to working system—and help teams adopt what comes next.</p>
       </div>
-
-      <dl>
-        <div class="skill-row">
-          <dt>Platforms</dt>
-          <dd>SharePoint Online, Microsoft Teams, ServiceNow, Microsoft Project Web App</dd>
-        </div>
-        <div class="skill-row">
-          <dt>Automation</dt>
-          <dd>Power Automate, PowerShell, Claude Code and AI-assisted workflow development</dd>
-        </div>
-        <div class="skill-row">
-          <dt>Data &amp; reporting</dt>
-          <dd>Power BI, SQL, DAX, VBA macros, Excel-based reporting</dd>
-        </div>
-        <div class="skill-row">
-          <dt>Practice</dt>
-          <dd>Requirements scoping, stakeholder communication, change management, Agile delivery, process automation</dd>
-        </div>
-        <div class="skill-row">
-          <dt>Tooling</dt>
-          <dd>Jira, Confluence, GitLab, ShareGate</dd>
-        </div>
-        <div class="skill-row">
-          <dt>Certification</dt>
-          <dd>ServiceNow Certified System Administrator (CSA)</dd>
-        </div>
+      <dl class="capabilities-list reveal">
+        <div><dt>Platforms</dt><dd>SharePoint Online · Microsoft Teams · ServiceNow · Microsoft Project Web App</dd></div>
+        <div><dt>Automation &amp; development</dt><dd>Power Automate · PowerShell · Claude Code · AI-assisted workflow development</dd></div>
+        <div><dt>Data &amp; reporting</dt><dd>Power BI · SQL · DAX · VBA · Excel reporting</dd></div>
+        <div><dt>Delivery &amp; leadership</dt><dd>Requirements scoping · stakeholder communication · change management · Agile delivery · project management</dd></div>
+        <div><dt>Tooling</dt><dd>Jira · Confluence · GitLab · ShareGate</dd></div>
+        <div><dt>Certification</dt><dd>ServiceNow Certified System Administrator (CSA)</dd></div>
       </dl>
     </section>
-  </div>
 
-  <div class="wrap">
-    <section id="background" aria-labelledby="bg-h">
-      <div class="section-head">
-        <h2 id="bg-h"><span class="num">04</span> — Background</h2>
-        <span class="fill"></span>
+    <section class="section wrap about-layout" id="about" aria-labelledby="about-title">
+      <div class="about-copy reveal">
+        <p class="section-index">04 / Background</p>
+        <h2 id="about-title">Between the people and the platforms.</h2>
+        <p>My work starts with understanding how people actually operate. Then I shape the platform, automate the handoffs, and support the change that makes the result stick.</p>
+        <p>That combination has taken me from CUI-aware content migrations and company intranets to executive reporting, employee lifecycle design, and AI-assisted administration.</p>
       </div>
+      <div class="background-list reveal">
+        <article><p>Education</p><h3>Arizona State University</h3><span>B.S. Computer Information Systems<br>Jul 2018 — Dec 2021 · Tempe, AZ</span></article>
+        <article><p>Certification</p><h3>ServiceNow CSA</h3><span>Certified System Administrator</span></article>
+        <article><p>Beyond work</p><h3>Build. Experiment. Repeat.</h3><span>Homelab infrastructure, AI agent experimentation, tabletop RPGs, and fantasy &amp; science fiction.</span></article>
+      </div>
+    </section>
 
-      <div class="bg-grid">
-        <div class="bg-item">
-          <p class="k">Education</p>
-          <p class="v">Arizona State University</p>
-          <p class="s">B.S. Computer Information Systems<br>2018 — 2021 · Tempe, AZ</p>
-        </div>
-        <div class="bg-item">
-          <p class="k">Certification</p>
-          <p class="v">ServiceNow CSA</p>
-          <p class="s">Certified System Administrator</p>
-        </div>
-        <div class="bg-item">
-          <p class="k">Elsewhere</p>
-          <p class="v">Tabletop &amp; sci-fi</p>
-          <p class="s">D&amp;D, fantasy and science fiction, and an unreasonable amount of homelab tinkering.</p>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner reveal">
+        <p class="section-index">05 / Contact</p>
+        <h2 id="contact-title">Let’s make the next system useful.</h2>
+        <p>For roles, collaborations, or a closer look at any project, get in touch.</p>
+        <div class="contact-links">
+          <a class="button button-primary" href="mailto:mlj539@gmail.com">mlj539@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/mjohnson98" target="_blank" rel="noopener noreferrer">LinkedIn <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://github.com/chully-co" target="_blank" rel="noopener noreferrer">GitHub <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
-  </div>
+  </main>
 
-  <div class="wrap">
-    <section class="contact" id="contact" aria-labelledby="contact-h">
-      <h2 id="contact-h">Open to conversations about platform work and automation.</h2>
-      <p class="sub">The fastest way to reach me is email. I usually reply the same day.</p>
-      <div class="contact-links">
-        <a href="mailto:mlj539@gmail.com">mlj539@gmail.com</a>
-        <a href="https://www.linkedin.com/in/mjohnson98">linkedin.com/in/mjohnson98</a>
-        <a href="https://github.com/chully-co">github.com/chully-co</a>
-      </div>
-    </section>
-  </div>
-
-</main>
-
-<footer class="wrap">
-  <span>Mitchell Johnson · Phoenix, AZ</span>
-  <span class="built">Built with plain HTML · Hosted on GitHub Pages</span>
-</footer>
-
-<script>
-  // Hairline appears under the masthead only once the page has scrolled.
-  (function () {
-    var head = document.querySelector('.masthead');
-    if (!head) return;
-    var onScroll = function () {
-      head.classList.toggle('is-stuck', window.scrollY > 12);
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  })();
-</script>
-
+  <footer class="wrap site-footer">
+    <span>Mitchell Johnson · Phoenix, AZ</span>
+    <span>Plain HTML, CSS &amp; JS · GitHub Pages</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 </body>
 </html>

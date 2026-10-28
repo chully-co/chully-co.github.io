@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mitchell Johnson | Business Systems Analyst &amp; Developer</title>
-  <meta name="description" content="Mitchell Johnson is a business systems analyst and developer in Phoenix, Arizona. SharePoint, ServiceNow, Power Platform, and automation work, with selected projects and full work history.">
+  <title>Mitchell Johnson — Business Systems Analyst &amp; Developer</title>
+  <meta name="description" content="Mitchell Johnson is a Business Systems Analyst &amp; Developer at Iridium Communications in the Phoenix area, working across SharePoint, ServiceNow, Teams, Jira, Confluence, and GitLab.">
   <meta name="author" content="Mitchell Johnson">
   <link rel="canonical" href="https://chully-co.github.io/">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Mitchell Johnson — Business Systems Analyst &amp; Developer">
-  <meta property="og:description" content="SharePoint migrations, Power Automate, ServiceNow, and AI-assisted admin work at Iridium Communications.">
+  <meta property="og:description" content="SharePoint, ServiceNow, Teams, and cross-platform automation at Iridium Communications.">
   <meta property="og:url" content="https://chully-co.github.io/">
   <meta property="og:image" content="https://chully-co.github.io/assets/social-card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Mitchell Johnson — Business Systems Analyst and Developer">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#f5f2eb" id="theme-color">
+  <meta name="theme-color" content="#0b0f17" id="theme-color">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
   <script>
     (function () {
       document.documentElement.classList.add('js');
       try {
         var saved = localStorage.getItem('mj-theme');
-        var preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : preferred;
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.dataset.theme = saved;
+        } else {
+          document.documentElement.dataset.theme = 'dark';
+        }
       } catch (error) {
-        document.documentElement.dataset.theme = 'light';
+        document.documentElement.dataset.theme = 'dark';
       }
     })();
   </script>
@@ -51,10 +51,9 @@
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Arizona State University" },
     "address": { "@type": "PostalAddress", "addressRegion": "AZ", "addressLocality": "Phoenix" },
     "sameAs": [
-      "https://www.linkedin.com/in/mjohnson98",
-      "https://github.com/chully-co"
+      "https://www.linkedin.com/in/mjohnson98"
     ],
-    "knowsAbout": ["SharePoint", "ServiceNow", "Power Automate", "Power BI", "Workflow automation"]
+    "knowsAbout": ["SharePoint", "ServiceNow", "Microsoft Teams", "Power Automate", "Power BI", "Jira", "Confluence", "GitLab"]
   }
   </script>
 </head>
@@ -64,302 +63,597 @@
   <header class="site-header" id="top">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="Mitchell Johnson, back to top">
-        <span class="brand-mark" aria-hidden="true">MJ</span>
-        <span class="brand-copy"><strong>Mitchell Johnson</strong><small>Business systems</small></span>
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-name">Mitchell Johnson</span>
+        <span class="brand-role">Business Systems &amp; Development</span>
       </a>
 
       <nav class="primary-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#about">About</a>
+        <a href="#homelab">Homelab</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Change color theme">
-        <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-          <circle cx="12" cy="12" r="3.5"></circle>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
-        </svg>
-        <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-          <path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"></path>
-        </svg>
-      </button>
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy reveal">
-        <p class="hero-kicker">Mitchell Johnson <span>Phoenix, Arizona</span></p>
-        <h1 id="hero-title"><span>Business systems,</span> <em>kept running.</em></h1>
-        <p class="hero-intro">I’m a business systems analyst and developer at Iridium Communications. Most days that means SharePoint, ServiceNow, and Power Automate: migrations, workflow fixes, and small scripts that save someone an afternoon.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">See selected work <span aria-hidden="true">↓</span></a>
-          <button class="button button-secondary" type="button" data-print>Print / save résumé</button>
+    <!-- Hero & Core Stack Architecture -->
+    <section class="hero wrap">
+      <div class="hero-intro-block">
+        <div class="status-pill">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>Business Systems Analyst &amp; Developer · Iridium Communications</span>
         </div>
-        <ul class="hero-credentials">
-          <li><span>Now</span>Iridium Communications</li>
-          <li><span>Certified</span>ServiceNow CSA</li>
-          <li><span>Degree</span>B.S. Computer Information Systems</li>
-        </ul>
+
+        <h1>Building, migrating, and maintaining the internal systems teams rely on every day.</h1>
+
+        <p class="hero-lead">
+          I’m based in Phoenix, Arizona. At Iridium Communications, I administer our core six-platform internal stack—<strong>SharePoint, Teams, ServiceNow, Jira, Confluence, and GitLab</strong>—while focusing my development work on SharePoint, Teams, and ServiceNow workflows.
+        </p>
+
+        <div class="hero-meta-row">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-secondary" href="mailto:mlj539@gmail.com">mlj539@gmail.com</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/mjohnson98" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
       </div>
 
-      <figure class="hero-stage reveal" id="systems-stage" aria-labelledby="systems-caption">
-        <div class="stage-top" aria-hidden="true"><span>Platforms I work in</span><span>05 in use</span></div>
-        <div class="network" id="systems-network" aria-hidden="true">
-          <svg class="network-lines" viewBox="0 0 100 100" preserveAspectRatio="none" focusable="false">
-            <path class="link-base" data-target="node-sharepoint" d="M50 48 Q33 30 17 23"></path>
-            <path class="link-flow" data-target="node-sharepoint" d="M50 48 Q33 30 17 23"></path>
-            <path class="link-base" data-target="node-servicenow" d="M50 48 Q67 30 80 21"></path>
-            <path class="link-flow" data-target="node-servicenow" d="M50 48 Q67 30 80 21"></path>
-            <path class="link-base" data-target="node-power" d="M50 48 Q72 57 84 70"></path>
-            <path class="link-flow" data-target="node-power" d="M50 48 Q72 57 84 70"></path>
-            <path class="link-base" data-target="node-ai" d="M50 48 Q29 61 18 77"></path>
-            <path class="link-flow" data-target="node-ai" d="M50 48 Q29 61 18 77"></path>
-            <path class="link-base" data-target="node-bi" d="M50 48 Q56 69 54 88"></path>
-            <path class="link-flow" data-target="node-bi" d="M50 48 Q56 69 54 88"></path>
-          </svg>
-
-          <div class="map-node" id="node-sharepoint" data-x="17" data-y="23" data-depth="19" data-phase="0.2">
-            <span class="node-number">01</span><strong>SharePoint</strong><small>Sites and files</small>
+      <!-- Startup-Style Interactive Architecture Diagram: Core 6-Platform Stack -->
+      <figure class="arch-card" id="stack-diagram" aria-label="Core platform stack and operations diagram">
+        <div class="arch-header">
+          <div class="arch-title-group">
+            <span class="arch-eyebrow">SYSTEM TOPOLOGY</span>
+            <h2 class="arch-title">Core Platform Stack &amp; Daily Operations</h2>
           </div>
-          <div class="map-node" id="node-servicenow" data-x="80" data-y="21" data-depth="13" data-phase="1.7">
-            <span class="node-number">02</span><strong>ServiceNow</strong><small>Tickets and requests</small>
-          </div>
-          <div class="map-node" id="node-power" data-x="84" data-y="70" data-depth="22" data-phase="3.1">
-            <span class="node-number">03</span><strong>Power Platform</strong><small>Automation</small>
-          </div>
-          <div class="map-node" id="node-ai" data-x="18" data-y="77" data-depth="15" data-phase="4.4">
-            <span class="node-number">04</span><strong>AI tools</strong><small>Admin scripting</small>
-          </div>
-          <div class="map-node" id="node-bi" data-x="54" data-y="88" data-depth="10" data-phase="5.8">
-            <span class="node-number">05</span><strong>Power BI</strong><small>Dashboards</small>
-          </div>
-          <div class="map-hub" id="node-hub" data-x="50" data-y="48" data-depth="6" data-phase="2.2">
-            <strong>MJ</strong><span>People, process,<br>platforms</span>
+          <div class="arch-filters" role="group" aria-label="Highlight responsibility layer">
+            <button type="button" class="arch-filter is-active" data-layer="all">All (6)</button>
+            <button type="button" class="arch-filter" data-layer="dev">Development (3)</button>
+            <button type="button" class="arch-filter" data-layer="admin">Admin &amp; Tickets (6)</button>
+            <button type="button" class="arch-filter" data-layer="ai">AI Automation (6)</button>
           </div>
         </div>
-        <figcaption class="stage-bottom" id="systems-caption">
-          <span class="pointer-hint">Move your pointer to explore the connections.</span>
-          <span class="touch-hint">The platforms I work in.</span>
-          <span class="live-label"><i aria-hidden="true"></i>Interactive</span>
+
+        <div class="arch-body">
+          <!-- Top Row: 6 Core Platforms grouped by focus -->
+          <div class="stack-groups">
+            <div class="stack-group" data-group="dev-platforms">
+              <div class="group-label">
+                <span>Primary Development &amp; Administration</span>
+                <span class="group-badge">Dev + Admin + AI</span>
+              </div>
+              <div class="platform-grid three-col">
+                <div class="platform-node" data-roles="all dev admin ai" tabindex="0" data-desc="Intranet architecture, CUI governance across commercial &amp; government programs, Power Automate document workflows, and daily admin tickets.">
+                  <div class="node-top">
+                    <span class="node-code">M365</span>
+                    <span class="node-dots">
+                      <i class="dot-dev" title="Development"></i>
+                      <i class="dot-admin" title="Administration"></i>
+                      <i class="dot-ai" title="AI Toolkit"></i>
+                    </span>
+                  </div>
+                  <strong>SharePoint</strong>
+                  <small>Intranet · Governance · 2TB CUI</small>
+                </div>
+
+                <div class="platform-node" data-roles="all dev admin ai" tabindex="0" data-desc="Workspace provisioning, governance, executive Teams Talks broadcasts, admin onboarding, and user support.">
+                  <div class="node-top">
+                    <span class="node-code">M365</span>
+                    <span class="node-dots">
+                      <i class="dot-dev" title="Development"></i>
+                      <i class="dot-admin" title="Administration"></i>
+                      <i class="dot-ai" title="AI Toolkit"></i>
+                    </span>
+                  </div>
+                  <strong>Microsoft Teams</strong>
+                  <small>Collaboration · Governance</small>
+                </div>
+
+                <div class="platform-node" data-roles="all dev admin ai" tabindex="0" data-desc="OOTB replatform, Flow Designer automation (100+ flows), Service Catalog items, Integration Hub spokes, and employee lifecycle scoping.">
+                  <div class="node-top">
+                    <span class="node-code">ITSM</span>
+                    <span class="node-dots">
+                      <i class="dot-dev" title="Development"></i>
+                      <i class="dot-admin" title="Administration"></i>
+                      <i class="dot-ai" title="AI Toolkit"></i>
+                    </span>
+                  </div>
+                  <strong>ServiceNow</strong>
+                  <small>Catalog · Flow Designer · CSA</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack-group" data-group="ops-platforms">
+              <div class="group-label">
+                <span>Engineering &amp; Knowledge Administration</span>
+                <span class="group-badge">Admin + AI</span>
+              </div>
+              <div class="platform-grid three-col">
+                <div class="platform-node" data-roles="all admin ai" tabindex="0" data-desc="Project configuration, permissions, ticket operations, and automated reporting &amp; offboarding scripts.">
+                  <div class="node-top">
+                    <span class="node-code">AGILE</span>
+                    <span class="node-dots">
+                      <i class="dot-admin" title="Administration"></i>
+                      <i class="dot-ai" title="AI Toolkit"></i>
+                    </span>
+                  </div>
+                  <strong>Jira</strong>
+                  <small>Issue Tracking · Agile Admin</small>
+                </div>
+
+                <div class="platform-node" data-roles="all admin ai" tabindex="0" data-desc="Knowledge base administration, space permissions, documentation structure, and automated audits.">
+                  <div class="node-top">
+                    <span class="node-code">DOCS</span>
+                    <span class="node-dots">
+                      <i class="dot-admin" title="Administration"></i>
+                      <i class="dot-ai" title="AI Toolkit"></i>
+                    </span>
+                  </div>
+                  <strong>Confluence</strong>
+                  <small>Documentation · Spaces</small>
+                </div>
+
+                <div class="platform-node" data-roles="all admin ai" tabindex="0" data-desc="Repository administration, user access management, offboarding automation, and hosting internal admin scripts.">
+                  <div class="node-top">
+                    <span class="node-code">SCM</span>
+                    <span class="node-dots">
+                      <i class="dot-admin" title="Administration"></i>
+                      <i class="dot-ai" title="AI Toolkit"></i>
+                    </span>
+                  </div>
+                  <strong>GitLab</strong>
+                  <small>Source Control · Access Admin</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector Bus -->
+          <div class="bus-connector" aria-hidden="true">
+            <div class="bus-line"></div>
+            <div class="bus-label">CROSS-PLATFORM OPERATIONS &amp; AUTOMATION BUS</div>
+          </div>
+
+          <!-- Bottom Operational Bar -->
+          <div class="ops-lanes">
+            <div class="ops-lane" data-roles="all dev">
+              <span class="lane-tag tag-dev">DEV &amp; ARCHITECTURE</span>
+              <p>Custom workflows, catalog consolidation, site architecture, and requirements scoping across SharePoint, Teams, and ServiceNow.</p>
+            </div>
+            <div class="ops-lane" data-roles="all admin">
+              <span class="lane-tag tag-admin">ADMIN &amp; TICKETS</span>
+              <p>Day-to-day administration, permissions, governance, and ticket resolution across all six platforms.</p>
+            </div>
+            <div class="ops-lane" data-roles="all ai">
+              <span class="lane-tag tag-ai">CLAUDE CODE TOOLKIT</span>
+              <p>Custom AI-assisted scripts for cross-platform reporting, user offboarding, and one-off administrative tasks.</p>
+            </div>
+          </div>
+        </div>
+
+        <figcaption class="arch-footer" id="stack-readout">
+          <span class="readout-indicator" aria-hidden="true"></span>
+          <span class="readout-text">Select a layer above or click any platform card to inspect how it fits into my daily work.</span>
         </figcaption>
       </figure>
     </section>
 
-    <section class="impact wrap reveal">
-      <div class="impact-item"><strong>2 TB</strong><span>of content migrated<br>to SharePoint</span></div>
-      <div class="impact-item"><strong>12</strong><span>stakeholder groups<br>coordinated</span></div>
-      <div class="impact-item"><strong>10+</strong><span>ServiceNow catalog<br>items built</span></div>
-      <div class="impact-item"><strong>4</strong><span>team members onboarded<br>through role transition</span></div>
-    </section>
-
-    <section class="section wrap" id="work" aria-labelledby="work-title">
-      <div class="section-heading reveal">
-        <p class="section-index">01 / Selected work</p>
-        <h2 id="work-title">Projects I can talk about.</h2>
-        <p>Four of them, with what I actually did and what came of it.</p>
+    <!-- Selected Projects -->
+    <section class="section wrap" id="projects" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <span class="section-kicker">01 / SELECTED PROJECTS</span>
+        <h2 id="projects-heading">Major migrations &amp; platform builds</h2>
+        <p class="section-sub">Three core initiatives at Iridium Communications—moving off legacy tools, reducing customization debt, and making everyday systems easier to maintain.</p>
       </div>
 
-      <article class="case-study reveal" id="project-migration">
-        <div class="case-copy">
-          <p class="case-index">01 — SharePoint migration</p>
-          <h3>Moving 2 TB off DocuShare.</h3>
-          <p class="case-lede">I led a nine-month migration of 2 TB of collaboration data, including CUI-classified content, from DocuShare to SharePoint. That meant coordinating twelve groups and keeping downtime small.</p>
-          <dl class="case-facts">
-            <div><dt>Role</dt><dd>Migration lead</dd></div>
-            <div><dt>Scale</dt><dd>2TB · 12 stakeholder groups</dd></div>
-            <div><dt>Result</dt><dd>Minimal downtime</dd></div>
-          </dl>
-          <div class="tags"><span>SharePoint</span><span>ShareGate</span><span>CUI</span><span>Change management</span></div>
-          <!-- Optional public project links can be added here. See README.md. -->
-        </div>
-        <div class="case-visual migration-visual" aria-hidden="true">
-          <div class="visual-chrome"><span>Migration map</span><span>9 months</span></div>
-          <div class="migration-flow">
-            <div class="visual-system"><small>From</small><strong>DocuShare</strong><span>Old system</span></div>
-            <div class="migration-channel"><span class="channel-line"><i></i></span><strong>2 TB</strong><small>12 groups</small></div>
-            <div class="visual-system visual-system-accent"><small>To</small><strong>SharePoint</strong><span>Where it lives now</span></div>
+      <div class="project-list">
+        <!-- Project 1: ServiceNow Replatform -->
+        <article class="project-card" id="project-servicenow">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">PROJECT 01</span>
+              <span class="project-pill">ServiceNow · Flow Designer · Integration Hub</span>
+            </div>
+            <h3>ServiceNow OOTB Replatform &amp; Lifecycle Overhaul</h3>
+            <p>
+              We moved off an older, heavily customized ServiceNow instance to a clean out-of-the-box (OOTB) instance so the platform would be maintainable long-term. Working as a team of four alongside an implementation vendor over several months, we rebuilt the core service delivery layer from the ground up.
+            </p>
+            <ul class="project-points">
+              <li><strong>Workflow &amp; Catalog Consolidation:</strong> Recreated legacy workflow engine processes in Flow Designer (<strong>100+ flows</strong>) and rebuilt the Service Catalog from scratch—consolidating <strong>200+ legacy items down to under 100</strong> while maintaining near feature parity.</li>
+              <li><strong>Integrations &amp; Change Management:</strong> Re-established Integration Hub spokes and redesigned the Change Management process for the new instance.</li>
+              <li><strong>Employee Lifecycle Overhaul (Nearly Complete):</strong> Leading requirements scoping and coordinating a development team to migrate personnel onboarding and offboarding from a separate workflow engine into ServiceNow.</li>
+            </ul>
           </div>
-          <div class="visual-status"><span>CUI-classified content</span><span><i></i>Minimal downtime</span></div>
-        </div>
-      </article>
 
-      <article class="case-study case-study-reverse reveal" id="project-automation">
-        <div class="case-copy">
-          <p class="case-index">02 — Process automation</p>
-          <h3>An automation the company still uses every day.</h3>
-          <p class="case-lede">I built a Power Automate document management system that is still in daily use across the company. Since launch it has needed very few fixes.</p>
-          <dl class="case-facts">
-            <div><dt>Role</dt><dd>Built the process</dd></div>
-            <div><dt>Reach</dt><dd>Company-wide</dd></div>
-            <div><dt>Result</dt><dd>Still in daily use</dd></div>
-          </dl>
-          <div class="tags"><span>Power Automate</span><span>SharePoint</span><span>Process design</span></div>
-          <!-- Optional public project links can be added here. See README.md. -->
-        </div>
-        <div class="case-visual automation-visual" aria-hidden="true">
-          <div class="visual-chrome"><span>Automated document flow</span><span>Active daily</span></div>
-          <div class="automation-flow">
-            <div class="automation-endpoint"><small>Input</small><strong>Documents</strong></div>
-            <div class="automation-beam"><span></span><span></span><span></span></div>
-            <div class="automation-core"><span class="core-ring"></span><strong>Power<br>Automate</strong><small>Workflow layer</small></div>
-            <div class="automation-beam"><span></span><span></span><span></span></div>
-            <div class="automation-endpoint"><small>Outcome</small><strong>Daily<br>operations</strong></div>
-          </div>
-          <div class="visual-status"><span>Company-wide use</span><span><i></i>Minimal fixes since launch</span></div>
-        </div>
-      </article>
+          <div class="project-diagram" aria-label="ServiceNow replatform architecture diagram">
+            <div class="diagram-bar">
+              <span>ARCHITECTURE: LEGACY CUSTOM → CLEAN OOTB INSTANCE</span>
+              <span class="diagram-stat">4 Team Members + Vendor</span>
+            </div>
+            <div class="sn-diagram-grid">
+              <div class="diag-box diag-legacy">
+                <span class="diag-label">BEFORE (LEGACY)</span>
+                <strong>Heavily Customized Instance</strong>
+                <ul class="diag-list">
+                  <li><span>200+</span> sprawling catalog items</li>
+                  <li><span>Legacy</span> Workflow Engine debt</li>
+                  <li><span>Separate</span> HR lifecycle engine</li>
+                </ul>
+              </div>
 
-      <article class="case-study reveal" id="project-ai">
-        <div class="case-copy">
-          <p class="case-index">03 — AI-assisted admin work</p>
-          <h3>AI tools for the leftover admin work.</h3>
-          <p class="case-lede">With Claude Code, I built a small toolkit for reporting, user offboarding, and one-off scripting across the six platforms my team uses.</p>
-          <dl class="case-facts">
-            <div><dt>Focus</dt><dd>Reporting · offboarding · scripting</dd></div>
-            <div><dt>Reach</dt><dd>Six platforms</dd></div>
-            <div><dt>Approach</dt><dd>Reusable workflows</dd></div>
-          </dl>
-          <div class="tags"><span>Claude Code</span><span>AI tooling</span><span>PowerShell</span><span>Automation</span></div>
-          <!-- Optional public project links can be added here. See README.md. -->
-        </div>
-        <div class="case-visual ai-visual" aria-hidden="true">
-          <div class="visual-chrome"><span>AI admin toolkit</span><span>06 platforms</span></div>
-          <div class="toolkit-map">
-            <div class="toolkit-tasks"><small>Tasks</small><span>Reporting</span><span>Offboarding</span><span>One-off scripting</span></div>
-            <div class="toolkit-core"><small>Built with</small><strong>Claude<br>Code</strong><span class="toolkit-pulse"></span></div>
-            <div class="toolkit-platforms"><small>Connected platforms</small><div><span>SharePoint</span><span>Teams</span><span>ServiceNow</span><span>Jira</span><span>Confluence</span><span>GitLab</span></div></div>
-          </div>
-          <div class="visual-status"><span>Reusable workflows</span><span><i></i>Built for real admin work</span></div>
-        </div>
-      </article>
+              <div class="diag-arrow" aria-hidden="true">
+                <span class="arrow-badge">Replatform</span>
+                <div class="arrow-track"><i class="arrow-pulse"></i></div>
+                <small>Rebuilt from scratch</small>
+              </div>
 
-      <article class="case-study case-study-reverse reveal" id="project-servicenow">
-        <div class="case-copy">
-          <p class="case-index">04 — ServiceNow delivery</p>
-          <h3>Ten catalog items, and now a lifecycle overhaul.</h3>
-          <p class="case-lede">I built more than ten Service Catalog items and the automated flows behind them. Now I’m scoping requirements for an onboarding and offboarding overhaul and coordinating the development team.</p>
-          <dl class="case-facts">
-            <div><dt>Delivered</dt><dd>10+ catalog items &amp; flows</dd></div>
-            <div><dt>Current</dt><dd>Employee lifecycle overhaul</dd></div>
-            <div><dt>Leadership</dt><dd>Requirements &amp; team coordination</dd></div>
-          </dl>
-          <div class="tags"><span>ServiceNow</span><span>Service Catalog</span><span>Flow Designer</span><span>Requirements</span></div>
-          <!-- Optional public project links can be added here. See README.md. -->
-        </div>
-        <div class="case-visual catalog-visual" aria-hidden="true">
-          <div class="visual-chrome"><span>Service delivery</span><span>Build → lead</span></div>
-          <div class="catalog-scene">
-            <div class="catalog-stack"><span class="stack-sheet sheet-one"></span><span class="stack-sheet sheet-two"></span><div class="catalog-card"><small>Service Catalog</small><strong>10+</strong><span>Items with<br>automated flows</span></div></div>
-            <div class="lifecycle-path"><div><span>01</span><strong>Catalog item</strong></div><i></i><div><span>02</span><strong>Automated flow</strong></div><i></i><div><span>03</span><strong>Employee lifecycle</strong></div></div>
+              <div class="diag-box diag-target">
+                <span class="diag-label">AFTER (CLEAN OOTB)</span>
+                <strong>Modern ServiceNow Instance</strong>
+                <div class="diag-metrics-grid">
+                  <div>
+                    <strong>&lt;100</strong>
+                    <small>Consolidated Catalog Items</small>
+                  </div>
+                  <div>
+                    <strong>100+</strong>
+                    <small>Flow Designer Workflows</small>
+                  </div>
+                </div>
+                <div class="diag-sub-pills">
+                  <span>Integration Hub Spokes</span>
+                  <span>Redesigned Change Mgmt</span>
+                  <span class="pill-active">Employee Lifecycle (Nearly Complete)</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="visual-status"><span>Requirements scoping</span><span><i></i>Development coordination</span></div>
-        </div>
-      </article>
+        </article>
+
+        <!-- Project 2: DocuShare to SharePoint Migration -->
+        <article class="project-card" id="project-docushare">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">PROJECT 02</span>
+              <span class="project-pill">SharePoint · ShareGate · CUI Compliance</span>
+            </div>
+            <h3>2 TB DocuShare to SharePoint Migration</h3>
+            <p>
+              I led a nine-month migration of 2 TB of company data—including Controlled Unclassified Information (CUI)—from legacy DocuShare into SharePoint Online, coordinating across 12 primary stakeholder groups and more than 20 content ownership groups.
+            </p>
+            <ul class="project-points">
+              <li><strong>Handling Tool Failures &amp; Duplicates:</strong> DocuShare carried heavy custom metadata, and the migration tool frequently errored out and duplicated data mid-transfer. We worked through validation, deduplication, and batch retries to ensure every file and metadata record landed cleanly.</li>
+              <li><strong>Stakeholder Coordination:</strong> Coordinated cutovers across 20+ ownership groups to keep operational downtime minimal while preserving strict CUI compliance boundaries.</li>
+              <li><strong>Long-Term Ownership:</strong> Once the data was safely across, content owners were able to reorganize and clean up their departmental libraries in SharePoint.</li>
+            </ul>
+          </div>
+
+          <div class="project-diagram" aria-label="DocuShare to SharePoint migration pipeline diagram">
+            <div class="diagram-bar">
+              <span>PIPELINE: 9-MONTH DATA &amp; METADATA MIGRATION</span>
+              <span class="diagram-stat">2 TB · CUI Content</span>
+            </div>
+            <div class="ds-pipeline">
+              <div class="ds-stage">
+                <span class="stage-step">01 / SOURCE</span>
+                <strong>DocuShare</strong>
+                <p>2 TB data, custom metadata schemas, CUI-classified records</p>
+              </div>
+
+              <div class="ds-connector" aria-hidden="true">→</div>
+
+              <div class="ds-stage ds-stage-warn">
+                <span class="stage-step">02 / CHALLENGES HANDLED</span>
+                <strong>Migration &amp; Cleanup</strong>
+                <div class="ds-badges">
+                  <span>Frequent tool errors</span>
+                  <span>Duplicate data removal</span>
+                  <span>Metadata mapping</span>
+                </div>
+              </div>
+
+              <div class="ds-connector" aria-hidden="true">→</div>
+
+              <div class="ds-stage ds-stage-success">
+                <span class="stage-step">03 / DESTINATION</span>
+                <strong>SharePoint Online</strong>
+                <p>20+ ownership groups &amp; 12 stakeholder units; ongoing owner-led organization</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: SharePoint Online Intranet -->
+        <article class="project-card" id="project-intranet">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">PROJECT 03</span>
+              <span class="project-pill">SharePoint Online · Power Automate · Change Management</span>
+            </div>
+            <h3>SharePoint Online Company Intranet &amp; Document Automation</h3>
+            <p>
+              We needed to get internal content off an insecure public-facing website and consolidate scattered resources from WordPress, ADP, and local file shares into a single, secure SharePoint Online intranet.
+            </p>
+            <ul class="project-points">
+              <li><strong>Federated Hub Architecture:</strong> Each department maintains its own SharePoint site, with departmental news automatically rolling up to the main intranet home site alongside regular CEO Teams Talks.</li>
+              <li><strong>Training &amp; Reception:</strong> I designed and led the training program for site owners and contributors, helping departments take ownership of their pages and earning a very positive reception across the company.</li>
+              <li><strong>Daily Document Management:</strong> Built a company-wide Power Automate document management workflow that remains in active daily use with minimal bug fixes required since launch.</li>
+            </ul>
+          </div>
+
+          <div class="project-diagram" aria-label="SharePoint intranet hub topology diagram">
+            <div class="diagram-bar">
+              <span>TOPOLOGY: FEDERATED INTRANET HUB</span>
+              <span class="diagram-stat">Company-Wide Adoption</span>
+            </div>
+            <div class="intranet-topology">
+              <div class="topo-column">
+                <span class="topo-heading">RETIRED SOURCES</span>
+                <div class="topo-node node-muted">Insecure Public Site / WordPress</div>
+                <div class="topo-node node-muted">ADP Portal Pages</div>
+                <div class="topo-node node-muted">Local File Shares</div>
+              </div>
+
+              <div class="topo-arrow-col" aria-hidden="true">
+                <span>Consolidated</span>
+                <div class="arrow-track"><i class="arrow-pulse"></i></div>
+              </div>
+
+              <div class="topo-column">
+                <span class="topo-heading">DEPARTMENT SITES</span>
+                <div class="topo-node">Dept. Maintained Sites</div>
+                <div class="topo-node">Trained Site Owners</div>
+                <div class="topo-node">Power Automate Doc Mgmt</div>
+              </div>
+
+              <div class="topo-arrow-col" aria-hidden="true">
+                <span>News Rollup</span>
+                <div class="arrow-track"><i class="arrow-pulse"></i></div>
+              </div>
+
+              <div class="topo-column">
+                <span class="topo-heading">MAIN INTRANET HUB</span>
+                <div class="topo-node node-highlight">
+                  <strong>Company Home Site</strong>
+                  <small>Aggregated Dept. News + CEO Teams Talks</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="experience-band" id="experience" aria-labelledby="experience-title">
-      <div class="wrap section">
-        <div class="section-heading reveal">
-          <p class="section-index">02 / Experience</p>
-          <h2 id="experience-title">Three roles at one company.</h2>
-          <p>Project reporting and administration first, then business analysis and development.</p>
-        </div>
+    <!-- Work Experience -->
+    <section class="section wrap" id="experience" aria-labelledby="experience-heading">
+      <div class="section-header">
+        <span class="section-kicker">02 / WORK EXPERIENCE</span>
+        <h2 id="experience-heading">Career timeline</h2>
+        <p class="section-sub">Four years at Iridium Communications—progressing from project reporting systems to SharePoint/Teams administration, and now business systems analysis and development.</p>
+      </div>
 
-        <div class="timeline">
-          <article class="job reveal">
-            <div class="job-meta"><time>Jan 2026 — Present</time><span>Chandler, AZ</span></div>
-            <div class="job-content">
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <time>Jan. 2026 — Present</time>
+            <span>Chandler, AZ</span>
+          </div>
+          <div class="timeline-body">
+            <div class="role-header">
               <h3>Business Systems Analyst &amp; Developer</h3>
-              <p class="employer">Iridium Communications</p>
-              <ul>
-                <li>Built an AI toolkit with Claude Code for reporting, user offboarding, and one-off scripting across SharePoint, Teams, ServiceNow, Jira, Confluence, and GitLab.</li>
-                <li>Built 10+ ServiceNow Service Catalog items with corresponding automated flows.</li>
-                <li>Leading requirements scoping for a ServiceNow-based employee lifecycle overhaul, coordinating a development team.</li>
-                <li>Onboarded four team members on SharePoint and Teams administration as part of the role transition.</li>
-                <li>Still responsible for SharePoint and Microsoft 365 governance across commercial and government programs.</li>
-              </ul>
+              <span class="company">Iridium Communications</span>
             </div>
-          </article>
+            <ul>
+              <li>Built an AI toolkit using Claude Code to automate admin tasks (reporting, user offboarding, and one-off scripting) across SharePoint, Teams, ServiceNow, Jira, Confluence, and GitLab.</li>
+              <li>Co-delivered the ServiceNow OOTB replatform (100+ Flow Designer flows, consolidated 200+ catalog items to under 100, re-established Integration Hub spokes, and redesigned Change Management).</li>
+              <li>Leading requirements scoping for a nearly complete ServiceNow-based employee lifecycle (onboarding/offboarding) overhaul, coordinating a development team to migrate off a separate workflow engine.</li>
+              <li>Onboarded 4 team members on SharePoint and Teams administration as part of the role transition.</li>
+              <li>Continue overseeing SharePoint and M365 governance across commercial and government programs, alongside daily admin and ticket work across all six core platforms.</li>
+            </ul>
+          </div>
+        </article>
 
-          <article class="job reveal">
-            <div class="job-meta"><time>Jan 2023 — Jan 2026</time><span>Tempe, AZ</span></div>
-            <div class="job-content">
-              <h3>SharePoint &amp; Teams Administrator</h3>
-              <p class="employer">Iridium Communications</p>
-              <ul>
-                <li>Led a nine-month migration of 2 TB of data, including CUI-classified content, from DocuShare to SharePoint, coordinating across 12 stakeholder groups with minimal downtime.</li>
-                <li>Designed and led training for a new SharePoint Online company intranet, moving content off WordPress, ADP, and local file shares.</li>
-                <li>Built a Power Automate document management system still in active daily use company-wide with minimal bug fixes since launch.</li>
-                <li>Gathered requirements from stakeholders, built out site architecture, and helped people adjust to the change, working in an Agile team.</li>
-              </ul>
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <time>Jan. 2023 — Jan. 2026</time>
+            <span>Tempe, AZ</span>
+          </div>
+          <div class="timeline-body">
+            <div class="role-header">
+              <h3>SharePoint and Teams Administrator</h3>
+              <span class="company">Iridium Communications</span>
             </div>
-          </article>
+            <ul>
+              <li>Led a 9-month migration of 2 TB of data, including CUI-classified content, from DocuShare to SharePoint across 12 stakeholder groups and 20+ content ownership groups with minimal downtime.</li>
+              <li>Consolidated content from an insecure public WordPress site, ADP, and local file shares into a new federated SharePoint Online company intranet; designed and led training for department owners.</li>
+              <li>Built a Power Automate document management system still in active daily use company-wide with minimal bug fixes since launch.</li>
+              <li>Engaged regularly with stakeholders to gather requirements, implement site architecture, and support change management efforts in an Agile environment.</li>
+            </ul>
+          </div>
+        </article>
 
-          <article class="job reveal">
-            <div class="job-meta"><time>Jan 2022 — Feb 2023</time><span>Tempe, AZ</span></div>
-            <div class="job-content">
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <time>Jan. 2022 — Feb. 2023</time>
+            <span>Tempe, AZ</span>
+          </div>
+          <div class="timeline-body">
+            <div class="role-header">
               <h3>Project Management Systems Administrator</h3>
-              <p class="employer">Iridium Communications</p>
-              <ul>
-                <li>Managed roughly 12 Power BI dashboards for project reporting; worked with outside consultants to consolidate about eight of them into a single executive dashboard.</li>
-                <li>Administered Microsoft Project Web App; used SQL, DAX, and VBA macros to keep the reporting accurate.</li>
-              </ul>
+              <span class="company">Iridium Communications</span>
             </div>
-          </article>
+            <ul>
+              <li>Managed ~12 Power BI dashboards for project reporting; partnered with outside consultants to consolidate roughly 8 into a single executive dashboard.</li>
+              <li>Administered Microsoft Project Web App; used SQL, DAX, and VBA macros to maintain reporting accuracy.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-          <article class="job reveal">
-            <div class="job-meta"><time>May 2021 — Jan 2022</time><span>Remote</span></div>
-            <div class="job-content">
-              <h3>IT Infrastructure Intern</h3>
-              <p class="employer">DHL Global Forwarding</p>
+    <!-- Off-Hours: Homelab & AI Agent Architecture -->
+    <section class="section wrap" id="homelab" aria-labelledby="homelab-heading">
+      <div class="section-header">
+        <span class="section-kicker">03 / BEYOND WORK</span>
+        <h2 id="homelab-heading">Homelab &amp; open-source AI operations</h2>
+        <p class="section-sub">Outside of work, I run a self-hosted homelab paired with a customized Hermes agent powered by open-source models to handle monitoring, briefs, and self-healing.</p>
+      </div>
+
+      <div class="homelab-card">
+        <div class="homelab-copy">
+          <h3>Autonomous Homelab Management</h3>
+          <p>
+            Rather than just running containers manually, I use a customized <strong>Hermes agent</strong> connected to open-source LLMs to actively help manage my home infrastructure.
+          </p>
+          <ul class="project-points">
+            <li><strong>Proactive Operations:</strong> Generates system briefs, assists with troubleshooting, and runs automatic healing routines when services degrade.</li>
+            <li><strong>Self-Hosted Services:</strong> Hosts a personal media library, automated computer backups, self-hosted image storage, and local AI inference workloads.</li>
+          </ul>
+        </div>
+
+        <div class="homelab-diagram" aria-label="Homelab and Hermes AI agent diagram">
+          <div class="diagram-bar">
+            <span>HOMELAB CONTROL LOOP</span>
+            <span class="diagram-stat">Open-Source Models</span>
+          </div>
+          <div class="hl-grid">
+            <div class="hl-agent-box">
+              <div class="hl-agent-header">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <strong>Customized Hermes Agent</strong>
+              </div>
+              <small>Open-Source LLM Runtime</small>
+              <div class="hl-capabilities">
+                <span>Proactive Briefs</span>
+                <span>Troubleshooting</span>
+                <span>Auto-Healing</span>
+              </div>
             </div>
-          </article>
+
+            <div class="hl-loop-arrows" aria-hidden="true">
+              <span>Telemetry &amp; Remediation ⇄</span>
+            </div>
+
+            <div class="hl-services-grid">
+              <div class="hl-service">
+                <strong>Local AI Stack</strong>
+                <small>Model inference &amp; tooling</small>
+              </div>
+              <div class="hl-service">
+                <strong>System Backups</strong>
+                <small>Automated PC snapshots</small>
+              </div>
+              <div class="hl-service">
+                <strong>Image Hosting</strong>
+                <small>Self-hosted photo archive</small>
+              </div>
+              <div class="hl-service">
+                <strong>Media Library</strong>
+                <small>Home streaming server</small>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section wrap capabilities-layout" id="capabilities" aria-labelledby="capabilities-title">
-      <div class="capabilities-intro reveal">
-        <p class="section-index">03 / Capabilities</p>
-        <h2 id="capabilities-title">Tools I use, and what I’m good at.</h2>
-        <p>I take a need from the first stakeholder conversation to a working system, then help people get used to it.</p>
+    <!-- Skills, Education & Credentials -->
+    <section class="section wrap" id="skills" aria-labelledby="skills-heading">
+      <div class="section-header">
+        <span class="section-kicker">04 / CREDENTIALS &amp; STACK</span>
+        <h2 id="skills-heading">Skills, certifications &amp; education</h2>
       </div>
-      <dl class="capabilities-list reveal">
-        <div><dt>Platforms</dt><dd>SharePoint Online · Microsoft Teams · ServiceNow · Microsoft Project Web App</dd></div>
-        <div><dt>Automation &amp; development</dt><dd>Power Automate · PowerShell · Claude Code · AI-assisted workflow development</dd></div>
-        <div><dt>Data &amp; reporting</dt><dd>Power BI · SQL · DAX · VBA · Excel reporting</dd></div>
-        <div><dt>Delivery &amp; leadership</dt><dd>Requirements scoping · stakeholder communication · change management · Agile delivery · project management</dd></div>
-        <div><dt>Tooling</dt><dd>Jira · Confluence · GitLab · ShareGate</dd></div>
-        <div><dt>Certification</dt><dd>ServiceNow Certified System Administrator (CSA)</dd></div>
-      </dl>
+
+      <div class="credentials-grid">
+        <div class="cred-card">
+          <span class="cred-label">CERTIFICATION</span>
+          <h3>ServiceNow Certified System Administrator (CSA)</h3>
+          <p>Service Catalog, Flow Designer, Integration Hub, Change Management, and OOTB platform administration.</p>
+        </div>
+
+        <div class="cred-card">
+          <span class="cred-label">EDUCATION</span>
+          <h3>Arizona State University</h3>
+          <p><strong>B.S., Computer Information Systems</strong><br>Jul. 2018 – Dec. 2021 · Tempe, AZ</p>
+        </div>
+
+        <div class="cred-card">
+          <span class="cred-label">CORE PLATFORMS</span>
+          <div class="tag-cloud">
+            <span>SharePoint Online</span>
+            <span>Microsoft Teams</span>
+            <span>ServiceNow</span>
+            <span>Jira</span>
+            <span>Confluence</span>
+            <span>GitLab</span>
+          </div>
+        </div>
+
+        <div class="cred-card">
+          <span class="cred-label">AUTOMATION, DATA &amp; TOOLING</span>
+          <div class="tag-cloud">
+            <span>Power Automate</span>
+            <span>PowerShell</span>
+            <span>Claude Code</span>
+            <span>Hermes / Local AI</span>
+            <span>ShareGate</span>
+            <span>Power BI</span>
+            <span>SQL / DAX / VBA</span>
+            <span>Project Web App</span>
+          </div>
+        </div>
+
+        <div class="cred-card">
+          <span class="cred-label">PRACTICES</span>
+          <div class="tag-cloud">
+            <span>Requirements Scoping</span>
+            <span>Stakeholder Communication</span>
+            <span>Change Management</span>
+            <span>Agile Delivery</span>
+            <span>CUI Governance</span>
+            <span>Process Automation</span>
+          </div>
+        </div>
+
+        <div class="cred-card">
+          <span class="cred-label">INTERESTS</span>
+          <div class="tag-cloud">
+            <span>Homelab Infrastructure</span>
+            <span>AI Agent Experimentation</span>
+            <span>Tabletop RPGs (D&amp;D)</span>
+            <span>Fantasy &amp; Sci-Fi Reading</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section wrap about-layout" id="about" aria-labelledby="about-title">
-      <div class="about-copy reveal">
-        <p class="section-index">04 / Background</p>
-        <h2 id="about-title">How I work.</h2>
-        <p>I start by watching how people actually do the job. Then I change the platform, automate the handoffs, and stick around for the part where everyone has to learn something new.</p>
-        <p>That’s taken me from CUI content migrations and a company intranet to executive reporting, employee lifecycle design, and AI-assisted admin work.</p>
-      </div>
-      <div class="background-list reveal">
-        <article><p>Education</p><h3>Arizona State University</h3><span>B.S. Computer Information Systems<br>Jul 2018 — Dec 2021 · Tempe, AZ</span></article>
-        <article><p>Certification</p><h3>ServiceNow CSA</h3><span>Certified System Administrator</span></article>
-        <article><p>Beyond work</p><h3>Things I tinker with</h3><span>A homelab, AI agent experiments, tabletop RPGs, and fantasy &amp; science fiction.</span></article>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="wrap contact-inner reveal">
-        <p class="section-index">05 / Contact</p>
-        <h2 id="contact-title">Get in touch.</h2>
-        <p>If you want to know more about a project, or you’re hiring, email is the best way to reach me.</p>
-        <div class="contact-links">
-          <a class="button button-primary" href="mailto:mlj539@gmail.com">mlj539@gmail.com <span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/mjohnson98" target="_blank" rel="noopener noreferrer">LinkedIn <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="https://github.com/chully-co" target="_blank" rel="noopener noreferrer">GitHub <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+    <!-- Contact -->
+    <section class="section wrap" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-box">
+        <div>
+          <span class="section-kicker">05 / CONTACT</span>
+          <h2 id="contact-heading">Get in touch</h2>
+          <p>Based in Phoenix, AZ. Feel free to reach out by email or connect on LinkedIn.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:mlj539@gmail.com">mlj539@gmail.com</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/mjohnson98" target="_blank" rel="noopener noreferrer">linkedin.com/in/mjohnson98 ↗</a>
         </div>
       </div>
     </section>
@@ -367,7 +661,6 @@
 
   <footer class="wrap site-footer">
     <span>Mitchell Johnson · Phoenix, AZ</span>
-    <span>Plain HTML, CSS &amp; JS · GitHub Pages</span>
     <a href="#top">Back to top ↑</a>
   </footer>
 </body>
